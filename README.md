@@ -45,8 +45,9 @@ Home
 <img src="./images/samples/home3.PNG" width="375px" alt="3e deel Fender homepagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+Productpagina 
+<img src="./images/samples/productpage1.PNG" width="375px" alt="Fender productpagina">
+<img src="./images/samples/productpage2.PNG" width="375px" alt="2e deel Fender productpagina">
  
 </details>
 
