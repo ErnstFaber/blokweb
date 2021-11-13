@@ -40,9 +40,9 @@ https://www.fender.com
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Home  
-<img src="./images/samples/home1.png" width="375px" alt="Fender homepagina">
-<img src="./images/samples/home2.png" width="375px" alt="2e deel Fender homepagina">
-<img src="./images/samples/home3.png" width="375px" alt="3e deel Fender homepagina">
+<img src="./images/samples/home1.PNG" width="375px" alt="Fender homepagina">
+<img src="./images/samples/home2.PNG" width="375px" alt="2e deel Fender homepagina">
+<img src="./images/samples/home3.PNG" width="375px" alt="3e deel Fender homepagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
