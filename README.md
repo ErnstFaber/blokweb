@@ -36,11 +36,13 @@ Responsive
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+https://www.fender.com
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+Home  
+<img src="./images/samples/home1.png" width="375px" alt="Fender homepagina">
+<img src="./images/samples/home2.png" width="375px" alt="2e deel Fender homepagina">
+<img src="./images/samples/home3.png" width="375px" alt="3e deel Fender homepagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
