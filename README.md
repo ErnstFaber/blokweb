@@ -45,7 +45,7 @@ Home
 <img src="./images/samples/home3.PNG" width="375px" alt="3e deel Fender homepagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-Productpagina 
+Productpagina   
 <img src="./images/samples/productpage1.PNG" width="375px" alt="Fender productpagina">
 <img src="./images/samples/productpage2.PNG" width="375px" alt="2e deel Fender productpagina">
  
