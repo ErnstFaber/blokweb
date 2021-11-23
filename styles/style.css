@@ -1,5 +1,144 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+:root{
+  --main-color: #f03829;
 }
 
+*, *::after, *::before {
+  box-sizing:border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* MENU */
+nav ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 10px;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 0px 20px 0px 20px;
+}
+
+nav ul li img {
+  width: 30px;
+}
+
+nav ul li:nth-child(2) {
+  margin-right: auto;
+}
+
+nav ul li:nth-child(2) img {
+  width: 80px;
+  margin-right: auto;
+}
+
+/* BANNER */
+main section:first-of-type {
+  background-color: black;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+  height: 800px;
+}
+
+main section:first-of-type img{
+  width: 100%;
+}
+
+main section:first-of-type h2 {
+  font-size: 2em;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+main section:first-of-type h3 {
+  letter-spacing: 2px;
+  font-weight: 300;
+  padding-top: 30px;
+}
+
+main section:first-of-type a:first-of-type {
+  background-color: var(--main-color);
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+
+  padding: 10px 20px 10px 20px;
+  border-radius: 4px;
+}
+
+main section:first-of-type a:last-of-type {
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+
+  padding: 10px 30px 10px 30px;
+  border-radius: 4px;
+}
+
+/* EERSTE BLOK */
+main article:first-of-type {
+  background-color: var(--main-color);
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin: 10px;
+}
+
+main article:first-of-type img {
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+main article:first-of-type h2 {
+  margin-top: 10px;
+}
+
+main article:first-of-type a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+main article:first-of-type:hover {
+  background-color: black;
+  transition: .3s;
+}
+
+/* TWEEDE BLOK */
+main article:nth-child(3) {
+  background-color: var(--main-color);
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+main article:nth-child(3) img {
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+main article:nth-child(3) h2 {
+  margin-top: 10px;
+}
+
+main article:nth-child(3) a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+main article:nth-child(3):hover {
+  background-color: black;
+  transition: .3s;
+}
