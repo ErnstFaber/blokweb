@@ -1,10 +1,11 @@
 /* CSS Document */
-:root{
-  --main-color: #f03829;
-}
-
 *, *::after, *::before {
   box-sizing:border-box;
+}
+
+:root{
+  --main-color: #f03829;
+  --gray-color: #979797;
 }
 
 body {
@@ -40,7 +41,7 @@ nav ul li:nth-child(2) img {
 }
 
 /* BANNER */
-main section:first-of-type {
+main > section:nth-of-type(1) {
   background-color: black;
   text-align: center;
   color: white;
@@ -49,23 +50,23 @@ main section:first-of-type {
   height: 800px;
 }
 
-main section:first-of-type img{
+main section:nth-of-type(1) img{
   width: 100%;
 }
 
-main section:first-of-type h2 {
+main section:nth-of-type(1) h2 {
   font-size: 2em;
   letter-spacing: 1.5px;
   font-weight: 700;
 }
 
-main section:first-of-type h3 {
+main section:nth-of-type(1) h3 {
   letter-spacing: 2px;
   font-weight: 300;
   padding-top: 30px;
 }
 
-main section:first-of-type a:first-of-type {
+main section:nth-of-type(1) > a:nth-of-type(1) {
   background-color: var(--main-color);
   text-decoration: none;
   font-weight: 700;
@@ -75,7 +76,7 @@ main section:first-of-type a:first-of-type {
   border-radius: 4px;
 }
 
-main section:first-of-type a:last-of-type {
+main section:nth-of-type(1) > a:nth-of-type(2) {
   text-decoration: none;
   font-weight: 700;
   color: white;
@@ -85,7 +86,7 @@ main section:first-of-type a:last-of-type {
 }
 
 /* EERSTE BLOK */
-main article:first-of-type {
+main > article:nth-of-type(1) {
   background-color: var(--main-color);
   text-align: center;
   color: white;
@@ -94,28 +95,28 @@ main article:first-of-type {
   margin: 10px;
 }
 
-main article:first-of-type img {
+main > article:nth-of-type(1) img {
   width: 100%;
   margin-bottom: 0px;
 }
 
-main article:first-of-type h2 {
+main > article:nth-of-type(1) h2 {
   margin-top: 10px;
 }
 
-main article:first-of-type a {
+main > article:nth-of-type(1) a {
   color: white;
   text-decoration: none;
   margin-bottom: 10px;
 }
 
-main article:first-of-type:hover {
+main > article:nth-of-type(1):hover {
   background-color: black;
   transition: .3s;
 }
 
 /* TWEEDE BLOK */
-main article:nth-child(3) {
+main > article:nth-of-type(2) {
   background-color: var(--main-color);
   text-align: center;
   color: white;
@@ -123,22 +124,262 @@ main article:nth-child(3) {
   margin: 10px;
 }
 
-main article:nth-child(3) img {
+main article:nth-of-type(2) img {
   width: 100%;
   margin-bottom: 0px;
 }
 
-main article:nth-child(3) h2 {
+main article:nth-of-type(2) h2 {
   margin-top: 10px;
 }
 
-main article:nth-child(3) a {
+main article:nth-of-type(2) a {
   color: white;
   text-decoration: none;
   margin-bottom: 10px;
 }
 
-main article:nth-child(3):hover {
+main article:nth-of-type(2):hover {
   background-color: black;
   transition: .3s;
+}
+
+/* DERDE BLOK */
+main section:nth-of-type(2) {
+  margin: 10px;
+}
+
+main section:nth-of-type(2) ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+  padding: 0;
+  list-style: none;
+}
+
+main section:nth-of-type(2) ul li {
+  padding: 20px;
+  width: 200px;
+}
+
+main section:nth-of-type(2) ul li {
+  padding: 20px;
+  width: 200px;
+}
+
+main section:nth-of-type(2) ul li article div{
+  background-color: var(--main-color);
+  text-align: center;
+  color: white;
+  width: 50px;
+  margin: auto;
+  z-index: 1;
+}
+
+main section:nth-of-type(2) ul li article h3{
+  font-size: 1em;
+}
+
+main section:nth-of-type(2) ul li article p{
+  font-weight: 700;
+}
+
+main section:nth-of-type(2) ul li article p:nth-of-type(2){
+  font-size: .8em;
+}
+
+/* VIERDE BLOK */
+main section:nth-of-type(3) {
+  margin: 10px;
+}
+
+main section:nth-of-type(3) article{
+  position: relative;
+  margin-bottom: 100px;
+}
+
+main section:nth-of-type(3) h2{
+  width: 100%;
+  background-color: var(--main-color);
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  text-transform: uppercase;
+  padding: 20px 0px 20px 0px;
+  margin: 0;
+}
+
+main section:nth-of-type(3) article img {
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+main section:nth-of-type(3) article div {
+  position: absolute;
+  background-color: white;
+  bottom: -40px;
+  padding: 10px;
+}
+
+main section:nth-of-type(3) article div h3{
+  font-size: 1.5em;
+  background-color: white;
+  text-transform: uppercase;
+  order: 2;
+  margin: 0;
+}
+
+main section:nth-of-type(3) article div h4{
+  order: 1;
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-size: .75em;
+}
+
+/* VIJFDE BLOK */
+main section:nth-of-type(4) {
+  margin: 10px;
+}
+
+main section:nth-of-type(4) ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+  padding: 0;
+  list-style: none;
+}
+
+main section:nth-of-type(4) ul li {
+  padding: 20px;
+  width: 200px;
+}
+
+main section:nth-of-type(4) ul li {
+  padding: 20px;
+  width: 200px;
+}
+
+main section:nth-of-type(4) ul li article div{
+  background-color: var(--main-color);
+  text-align: center;
+  color: white;
+  width: 50px;
+  margin: auto;
+  z-index: 1;
+}
+
+main section:nth-of-type(4) ul li article h3{
+  font-size: 1em;
+}
+
+main section:nth-of-type(4) ul li article p{
+  font-weight: 700;
+}
+
+main section:nth-of-type(4) ul li article p:nth-of-type(2){
+  font-size: .8em;
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+  color: white;
+  padding: 30px;
+}
+
+footer img {
+  width: 150px;
+}
+
+footer section:nth-of-type(1) {
+
+}
+
+footer section:nth-of-type(1) h3{
+  font-size: 2em;
+}
+
+footer section:nth-of-type(1) p{
+  color: var(--gray-color);
+  font-size: 1.2em;
+}
+
+footer section:nth-of-type(1) form {
+  padding: 20px;
+  border: 1px solid var(--gray-color);
+}
+
+footer section:nth-of-type(1) form input {
+  background: black;
+  caret-color: white;
+  box-shadow: none;
+  border: 0;
+  color: var(--gray-color);
+  outline-width: 0;
+  flex-grow: 1;
+}
+
+footer section:nth-of-type(1) form input::placeholder {
+  color: var(--gray-color);
+}
+
+footer section:nth-of-type(1) form input:nth-child(2) {
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+footer section:nth-of-type(2) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+footer section:nth-of-type(2) ul {
+  width: 50%;
+  padding: 0;
+}
+
+footer section:nth-of-type(2) ul li{
+  list-style: none;
+  color: var(--gray-color);
+}
+
+footer section:nth-of-type(2) ul li h4 {
+  color: white;
+  border-top: 1px solid var(--gray-color);
+}
+
+footer section:nth-of-type(3) {
+  text-align: center;
+}
+
+footer section:nth-of-type(3) a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: solid 2px white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+footer section:nth-of-type(3) img {
+  width: 20px;
+}
+
+footer section:nth-of-type(4) ul li {
+  list-style: none;
+  color: var(--gray-color);
+  text-align: center;
+  padding: 10px;
+}
+
+footer small {
+  font-size: .7em;
+  color: var(--gray-color);
+  text-align: center;
 }
