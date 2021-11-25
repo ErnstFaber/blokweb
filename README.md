@@ -76,17 +76,14 @@ Productpagina
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik vond het plaatsen van de onderdelen goed gaan, ik heb best wel veel dingen op de plek staan waar ik ze wil. Het enige wat ik nog wel lastig vind zijn de kolommen. De footer is bijv. in 2 delen gesplitst en daar de opmaak van vind ik wel moeilijk.
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+Ernst: Hoe maak ik 2 pagina's op in 1 css document?
+Rifky: 
 
 
 ### Verslag van meeting
