@@ -139,26 +139,24 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Voice Over
+De voice over gaat goed. De kopjes worden in een logische volgorde voorgelezen, maar wat nog niet zo goed gaat zijn de linkjes. Niet alles wat een linkje hoort te zijn is namelijk een linkje. Dit is iets wat ik nog moet toevoegen.
 
 
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Tab
+Je kan al redelijk tabben door de content van de website. De tab slaat wel volledig het menu over en het skipt de content van de verschillende lijsten waar de producten in staan. 
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Alles wat klikbaar hoort te zijn, moet worden omhulst door een a tag. 
 
 
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Beperking
+Met de verschillende brillen is het contrast nog wel heel goed, maar de letterdikte van sommige kopjes zijn te dun om goed te lezen.
+
+Het is slim om toch de dikte van de letters dikker te maken, ook al is die op de originele website heel dun.
+
+
+#### Stroomschokken
+Het gebruik van de website met de stroomschokken, werkte verassend genoeg best goed. De knoppen zijn heel groot dus die blijven goed klikbaar en er zijn niet te veel kleine knoppen waar je op moet drukken.
 
 Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
 
@@ -230,6 +228,6 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 2. https://stackoverflow.com/questions/10166250/creating-a-border-like-this-using-before-and-after-pseudo-elements-in-css Sommige van de H3's hebben een kleine border boven op, dit kun je realiseren met before en after. 
 3. https://dev.to/nazanin_ashrafi/how-to-darken-an-image-with-css-4f5h Om de opacity aan te passen van een afbeelding heb ik deze bron gebruikt.
 4. https://stackoverflow.com/questions/1457849/how-to-remove-the-border-highlight-on-an-input-text-element Om de styling mooi te maken van het aanmeld formulier heb ik deze bron gebruikt. In specifiek om de hightlight weg te krijgen.
-5. 
+5. https://stackoverflow.com/questions/27853884/media-queries-and-image-swapping Veranderen van background image
 
 </details>
