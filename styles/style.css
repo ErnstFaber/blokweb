@@ -7,6 +7,8 @@
   --main-color: #f03829;
   --gray-color: #979797;
   --dark-gray-color: #121212;
+  --black: black;
+  --white: white;
 }
 
 body {
@@ -18,7 +20,7 @@ body {
 /* MENU */
 header nav {
   position: fixed;
-  background-color: white;
+  background-color: var(--white);
   width: 100%;
   z-index: 1;
   top: 0;
@@ -35,25 +37,37 @@ nav ul {
 
 nav ul li {
   list-style: none;
-  padding: 0px 20px 0px 20px;
+  padding: 0 1.25em 0 1.25em;
 }
 
 nav ul li img {
-  width: 20px;
+  width: 1.25em;
 }
 
 nav ul li:nth-child(2) {
-  margin-right: auto;
+  flex: 1;
 }
 
 nav ul li:nth-child(2) img {
-  width: 80px;
+  width: 5em;
   margin-right: auto;
 }
 
+nav ul li a {
+  text-decoration: none;
+  color: var(--gray-color);
+  text-transform: uppercase;
+  font-size: .8em;
+  font-weight: 700;
+}
+
+nav > ul:first-of-type li ul {
+  display: none;
+}
+
 header section {
-  position: absolute;
-  background-color: white;
+  position: fixed;
+  background-color: var(--white);
   width: 95%;
   font-weight: 700;
   text-transform: uppercase;
@@ -97,7 +111,7 @@ header section ul li span{
 .page-one main > section:nth-of-type(1) {
   background-color: black;
   text-align: center;
-  color: white;
+  color: var(--white);
   text-transform: uppercase;
   width: 100%;
   padding-bottom: 4em;
@@ -113,33 +127,33 @@ header section ul li span{
 
 .page-one main section:nth-of-type(1) h2 {
   font-size: 2em;
-  letter-spacing: 1.5px;
+  letter-spacing: .1em;
   font-weight: 700;
 }
 
 .page-one main section:nth-of-type(1) h3 {
-  letter-spacing: 2px;
+  letter-spacing: 0.125em;
   font-weight: 300;
-  padding-top: 30px;
+  padding-top: 1.8em;
 }
 
 .page-one main section:nth-of-type(1) > a:nth-of-type(1) {
   background-color: var(--main-color);
   text-decoration: none;
   font-weight: 700;
-  color: white;
+  color: var(--white);
 
-  padding: 10px 20px 10px 20px;
-  border-radius: 4px;
+  padding: 0.6em 1.25em 0.6em 1.25em;
+  border-radius: 0.25em;
 }
 
 .page-one main section:nth-of-type(1) > a:nth-of-type(2) {
   text-decoration: none;
   font-weight: 700;
-  color: white;
+  color: var(--white);
 
-  padding: 10px 30px 10px 30px;
-  border-radius: 4px;
+  padding: 0.625em 1.8em 0.625em 1.8em;
+  border-radius: 0.25em;
 }
 
 /* EERSTE BLOK */
@@ -155,27 +169,27 @@ header section ul li span{
 .page-one main >section:nth-child(2) article:nth-of-type(1) {
   background-color: var(--main-color);
   text-align: center;
-  color: white;
+  color: var(--white);
   text-transform: uppercase;
-  margin: 10px;
+  margin: 0.6em;
 }
 
 .page-one main section:nth-child(2) article:nth-of-type(1) img {
   width: 100%;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .page-one main section:nth-child(2) article:nth-of-type(1) h2 {
-  margin-top: 10px;
+  margin-top: 0.6em;
 }
 
 .page-one main section:nth-child(2) article:nth-of-type(1) a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
-  margin-bottom: 10px;
+  margin-bottom: 0.6em;
 }
 
-.page-one main section:nth-child(2) article:nth-of-type(1):hover {
+.page-one main section:nth-child(2) > article:nth-of-type(1):hover {
   background-color: black;
   transition: .3s;
 }
@@ -184,24 +198,24 @@ header section ul li span{
 .page-one main section:nth-child(2) article:nth-of-type(2) {
   background-color: var(--main-color);
   text-align: center;
-  color: white;
+  color: var(--white);
   text-transform: uppercase;
-  margin: 10px;
+  margin: 0.6em;
 }
 
 .page-one main section:nth-child(2) article:nth-of-type(2) img {
   width: 100%;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .page-one main section:nth-child(2) article:nth-of-type(2) h2 {
-  margin-top: 10px;
+  margin-top: 0.6em;
 }
 
 .page-one main section:nth-child(2) article:nth-of-type(2) a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
-  margin-bottom: 10px;
+  margin-bottom: 0.6em;
 }
 
 .page-one main section:nth-child(2) article:nth-of-type(2):hover {
@@ -210,16 +224,27 @@ header section ul li span{
 }
 
 /* DERDE BLOK */
+main section:nth-of-type(3) {
+  margin: 0.6em;
+}
+
 .page-one main section:nth-of-type(3) h2 {
   text-transform: uppercase;
-  padding: 20px;
+  padding: 1.25em;
+  position: relative;
 }
 
-main section:nth-of-type(3) {
-  margin: 10px;
+.page-one main section:nth-of-type(3) h2::before {
+  content: '';
+  position: absolute;
+  height: 0.2em;
+  width: 2.5em;
+  top: 0.25em;
+  background: var(--main-color);
+
 }
 
-main section:nth-of-type(3) ul {
+.page-one main section:nth-of-type(3) ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -229,8 +254,13 @@ main section:nth-of-type(3) ul {
 }
 
 main section:nth-of-type(3) ul li {
-  padding: 20px;
-  width: 150px;
+  padding: 1.25em;
+  width: 9.5em;
+}
+
+main section:nth-of-type(3) ul li a {
+  text-decoration: none;
+  color: var(--black);
 }
 
 main section:nth-of-type(3) ul li article h3{
@@ -244,8 +274,8 @@ main section:nth-of-type(3) ul li article p {
 main section:nth-of-type(3) ul li article p:first-of-type {
   background-color: var(--main-color);
   text-align: center;
-  color: white;
-  width: 50px;
+  color: var(--white);
+  width: 3em;
   margin: auto;
   z-index: 1;
 }
@@ -254,42 +284,52 @@ main section:nth-of-type(3) ul li article p:first-of-type {
 .page-one main section:nth-of-type(4) {
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  margin: 0.6em;
 }
 
 .page-one main section:nth-of-type(4) article{
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 6em;
+}
+
+.page-one main section:nth-of-type(4) a article{
+  text-decoration: none;
+  color: var(--black);
 }
 
 .page-one main section:nth-of-type(4) h2{
   width: 100%;
   background-color: var(--main-color);
   text-align: center;
-  color: white;
+  color: var(--white);
   font-size: 3em;
   text-transform: uppercase;
-  padding: 20px 0px 20px 0px;
+  padding: 0.5em 0 0.5em 0;
   margin: 0;
 }
 
 .page-one main section:nth-of-type(4) article img {
   width: 100%;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .page-one main section:nth-of-type(4) article div {
   display: flex;
   flex-direction: column;
   position: absolute;
-  background-color: white;
-  bottom: -40px;
-  padding: 10px;
+  background-color: var(--white);
+  bottom: -2.5em;
+  padding: 0.6em;
 }
 
-.page-one main section:nth-of-type(4) article div h3 {
+.page-one main section:nth-of-type(4) article div a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.page-one main section:nth-of-type(4) article div a h3 {
   font-size: 1.5em;
-  background-color: white;
+  background-color: var(--white);
   text-transform: uppercase;
   order: 2;
   margin: 0;
@@ -306,22 +346,22 @@ main section:nth-of-type(3) ul li article p:first-of-type {
 
 /* VIJFDE BLOK */
 .page-one main section:nth-of-type(5) {
-  margin: 10px;
+  margin: 0.6em;
 }
 
 .page-one main section:nth-of-type(5) h2 {
   text-transform: uppercase;
-  padding: 20px;
+  padding: 1.25em;
   position: relative;
 }
 
 .page-one main section:nth-of-type(5) h2::before {
   content: '';
   position: absolute;
-  height: 3px;
+  height: .2em;
   width: 2.5em;
   top: .25em;
-  background: red;
+  background: var(--main-color);
 }
 
 .page-one main section:nth-of-type(5) ul {
@@ -334,15 +374,20 @@ main section:nth-of-type(3) ul li article p:first-of-type {
 }
 
 .page-one main section:nth-of-type(5) ul li {
-  padding: 20px;
-  width: 150px;
+  padding: 1.25em;
+  width: 9em;
+}
+
+.page-one main section:nth-of-type(5) ul li a {
+  text-decoration: none;
+  color: var(--black);
 }
 
 .page-one main section:nth-of-type(5) ul li article div{
   background-color: var(--main-color);
   text-align: center;
-  color: white;
-  width: 50px;
+  color: var(--white);
+  width: 3em;
   margin: auto;
   z-index: 1;
 }
@@ -358,25 +403,21 @@ main section:nth-of-type(3) ul li article p:first-of-type {
 .page-one main section:nth-of-type(5) ul li article p:first-of-type {
   background-color: var(--main-color);
   text-align: center;
-  color: white;
-  width: 50px;
+  color: var(--white);
+  width: 3em;
   margin: auto;
   z-index: 1;
-}
-
-.page-one main section:nth-of-type(5) ul li article p:nth-of-type(3){
-  font-size: .8em;
 }
 
 /* FOOTER */
 footer {
   background-color: var(--dark-gray-color);
-  color: white;
-  padding: 30px;
+  color: var(--white);
+  padding: 2em;
 }
 
 footer img {
-  width: 150px;
+  width: 9em;
 }
 
 footer section:nth-of-type(1) h3{
@@ -389,18 +430,22 @@ footer section:nth-of-type(1) p{
 }
 
 footer section:nth-of-type(1) form {
-  padding: 20px;
+  display: flex;
+  padding: 1.25em;
   border: 1px solid var(--gray-color);
 }
 
 footer section:nth-of-type(1) form input {
   background: var(--dark-gray-color);
-  caret-color: white;
+  caret-color: var(--white);
   box-shadow: none;
   border: 0;
   color: var(--gray-color);
   outline-width: 0;
-  flex-grow: 1;
+}
+
+footer section:nth-of-type(1) form input:first-of-type {
+  flex: 1;
 }
 
 footer section:nth-of-type(1) form input::placeholder {
@@ -409,8 +454,8 @@ footer section:nth-of-type(1) form input::placeholder {
 
 footer section:nth-of-type(1) form input:nth-child(2) {
   background-color: var(--main-color);
-  color: white;
-  padding: 10px;
+  color: var(--white);
+  padding: 1.5em 2em;
   text-transform: uppercase;
 }
 
@@ -428,11 +473,16 @@ footer section:nth-of-type(2) ul {
 
 footer section:nth-of-type(2) ul li{
   list-style: none;
+  line-height: 2em;
+}
+
+footer section:nth-of-type(2) ul li a{
+  text-decoration: none;
   color: var(--gray-color);
 }
 
 footer section:nth-of-type(2) ul li h4 {
-  color: white;
+  color: var(--white);
   border-top: 1px solid var(--gray-color);
   width: 50%;
   padding-top: 1em;
@@ -442,18 +492,22 @@ footer section:nth-of-type(3) {
   text-align: center;
 }
 
-footer section:nth-of-type(3) a {
+footer section:nth-of-type(3) > a {
+  display: flex;
+  width: 10em;
+  justify-content: center;
   text-decoration: none;
-  color: white;
+  color: var(--white);
   text-transform: uppercase;
   font-weight: 700;
-  border: solid 2px white;
-  padding: 10px;
-  border-radius: 20px;
+  border: solid 2px var(--white);
+  padding: 0.6em;
+  border-radius: 1.25em;
+  margin: 0 auto;
 }
 
 footer section:nth-of-type(3) img {
-  width: 20px;
+  width: 1.5em;
 }
 
 footer section:nth-of-type(3) ul {
@@ -470,7 +524,7 @@ footer section:nth-of-type(3) ul li {
 }
 
 footer section:nth-of-type(3) ul li img {
-  width: 1.52em;
+  width: 1.5em;
 }
 
 footer section:nth-of-type(4) ul {
@@ -480,10 +534,14 @@ footer section:nth-of-type(4) ul {
 
 footer section:nth-of-type(4) ul li {
   list-style: none;
-  color: var(--gray-color);
   text-align: center;
   padding: 1.3em;
   font-size: .8em;
+}
+
+footer section:nth-of-type(4) ul li a {
+  text-decoration: none;
+  color: var(--gray-color);
 }
 
 footer section:nth-of-type(4) ul li:first-child {
@@ -515,32 +573,141 @@ footer small {
   margin-top: .2em;
 }
 
-.page-two main section:nth-of-type(1) ul {
+.page-two > section:first-of-type p:first-of-type {
+  color: var(--gray-color);
+  font-size: .8em;
+}
+
+.page-two main section:first-of-type ul:first-of-type {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-top: 1px solid var(--gray-color);
+  justify-content: center;
   padding: 0;
-  margin-bottom: 0;
+  border-top: 0.5px solid var(--gray-color)
+}
+
+.page-two main section:first-of-type ul:last-of-type {
+  display: none;
 }
 
 .page-two main section:first-of-type ul li {
   padding: 1em;
   list-style: none;
-  text-transform: uppercase;
-  font-weight: 700;
+}
+
+.page-two main section:first-of-type ul li h4 {
+  border-bottom: 1px solid var(--gray-color);
 }
 
 .page-two main section:first-of-type ul li span {
   color: var(--gray-color)
 }
 
-.page-two main section:first-of-type img {
+.page-two main section:last-of-type img:first-of-type {
   width: 100%;
 }
 
-/* PRODUCT VIEW */
-@media only screen and (min-width: 500px) {
+.page-two main section:last-of-type h3 {
+  letter-spacing: 0.125em;
+  font-weight: 300;
+  padding-top: 1.9em;
+}
+
+.page-two main section:last-of-type ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  list-style: none;
+}
+
+.page-two main section:last-of-type li {
+  padding: 1.25em;
+  width: 9em;
+}
+
+.page-two main section:last-of-type li a {
+  text-decoration: none;
+  color: var(--black)
+}
+
+.page-two main section:last-of-type li article {
+  padding-bottom: 1.5em;
+}
+
+.page-two main section:last-of-type li article p {
+  font-weight: 700;
+}
+
+.page-two main section:last-of-type li article p:first-of-type {
+  background-color: var(--main-color);
+  text-align: center;
+  color: var(--white);
+  width: 3em;
+  margin: auto;
+  z-index: 1;
+}
+
+.page-two main section:last-of-type li article img {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/*********************************/
+/*            MOBIEL             */
+/*********************************/
+@media only screen and (min-width: 80em) {
+  nav ul li:first-of-type img {
+    display: none;
+  }
+
+  nav ul:first-of-type li ul {
+    display: block;
+  }
+
+  nav ul:first-of-type li ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0.8em;
+  }
+
+  nav > ul {
+    width: fit-content;
+    margin: 0.8em auto;
+  }
+
+  .page-two main {
+    margin: 7em 10em;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 5em;
+  }
+
+  .page-two section:first-of-type h1 {
+    margin-top: 0;
+  }
+
+  .page-two main section:first-of-type ul:first-of-type {
+    display: none;
+  }
+
+  .page-two main section:first-of-type ul:last-of-type {
+    padding-left: 0;
+    display: block;
+  }
+
+  .page-two main section:first-of-type ul li {
+    padding: 0;
+  }
+
+  .page-two main section:last-of-type li {
+    margin: 2.5em;
+    width: 12.5em;
+}
+}
+
+@media only screen and (min-width: 45em) { 
   .page-one main > section:nth-child(2) {
     flex-direction: row;
   }
@@ -552,6 +719,44 @@ footer small {
 
   .page-one main section:nth-of-type(4) article {
     width: 50%;
-    padding: 10px;
+    padding: 0.6em;
+  }
+
+  .page-one main section:nth-of-type(1) > img:first-of-type {
+    display: none;
+  }
+
+  .page-one main > section:nth-of-type(1) {
+    background-image: url(../images/pictures/banner_guitar_sideways.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    padding: 15em 5em;
+  }
+
+  footer section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    margin-bottom: 5em;
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+  
+  footer section:nth-of-type(2) ul {
+    width: 100%;
+  }
+
+  footer section:first-of-type section {
+    display: flex;
+  }
+
+  footer section:first-of-type section p {
+    flex-grow: 1;
+  }
+
+  footer section:first-of-type section form {
+    margin-right: 13em;
   }
 }

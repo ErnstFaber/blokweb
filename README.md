@@ -172,26 +172,26 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik had een aantal aanpassingen gedaan aan de website, waardoor er opeens veel fout ging. Alles ging op andere plekken staan dan ik wilde en het leek alsof er heel veel code weg was. Het was dus nog al een gedoe om veel elementen weer te veranderen naar hun originele positie, daar had ik soms hulp bij nodig. 
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Ernst      
+| ---            
+| Hoe kan ik het hamburger menu laten meescrollen op de hele pagina?
+| Het menu moet veranderen op basis van het schermgrootte. Hoe krijg ik de items van het hamburger menu in het normale menu?
+| Hoe kan ik tekst bovenop een afbeelding krijgen?
+| ...            
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Je moet zowel het menu als het hamburgermenu fixed maken, dit zorgd ervoor dat beide elementen meescrollen.
+- Het menu op telefoon moet al de items bevatten voor het grootte menu, maar dan onzichtbaar. Daarna kan ik het weer zichtbaar maken op een groter scherm.
+- Je kan een section een achtergrond afbeelding geven, alle tekst in de section gaat dan over de afbeelding.
 
 </details>
 
@@ -205,11 +205,12 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik vond het moeilijk om mijn css meteen netjes te krijgen door zoveel mogelijk EM waarders te gebruiken. Ook heb ik niet meteen van alles wat klikbaar zou moeten zijn, een linkje gemaakt. Doordat ik weet dat ik een 'dummy' website maak, stond ik er niet bij stil dat het niet toevoegen van linkjes het tabben beinvloed. De structuur van de HTML was soms ook even lastig. Ik had niet altijd alle elementen die nodig waren in de eerste keer coderen toegevoegd, waardoor de css-styling ook vaak aangepast moest worden. Voor de volgende keer zou ik betere breakdown schetsen maken, zodat ik meteen alle elementen in 1 keer goed heb. Verder vond ik dat het namaken van de website me wel goed afging en dat er al snel goed resultaat was. Over de uiteindelijke uitwerking ben ik zeer tevreden, het proces had wat meer vlekkeloos gemogen.
 
 ### Screenshot(s)
 
-hier screenshot(s) van je eindresultaat
+<img src="./images/pictures/website-screenshot-mobile.png" width="375px" alt="breakdown van een dynamisch deel">
+<img src="./images/pictures/website-screenshot-desktop.png" width="375px" alt="breakdown van een dynamisch deel">
 
 </details>
 
@@ -229,5 +230,6 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 3. https://dev.to/nazanin_ashrafi/how-to-darken-an-image-with-css-4f5h Om de opacity aan te passen van een afbeelding heb ik deze bron gebruikt.
 4. https://stackoverflow.com/questions/1457849/how-to-remove-the-border-highlight-on-an-input-text-element Om de styling mooi te maken van het aanmeld formulier heb ik deze bron gebruikt. In specifiek om de hightlight weg te krijgen.
 5. https://stackoverflow.com/questions/27853884/media-queries-and-image-swapping Veranderen van background image
+6. https://www.w3schools.com/cssref/pr_background-image.asp Voor het toevoegen van een achtergrond afbeelding op een section
 
 </details>
